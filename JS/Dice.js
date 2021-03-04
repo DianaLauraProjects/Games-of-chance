@@ -18,7 +18,7 @@ function sum(number1,number2){
     return lessThanTwelve(value);
 }
 function subtraction(number1,number2) {
-    value=Math.abs(number1-number2)
+    value=Math.abs(number1-number2);
     return lessThanTwelve(value);
 }
 function multiplication(number1,number2) {
