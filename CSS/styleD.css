@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    font-style: italic;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(50deg, rgb(245, 112, 4),rgb(248, 29, 157));
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-pc{
+    border:5px solid transparent;
+    border-image:linear-gradient(to bottom,black 0%, rgb(247, 243, 243) 100%)1;
+    height: 6em;
+    width: 14%;
+    display: flex;
+    position: relative; 
+    margin-top:2em;
+    margin-left: 82%;
+    margin-right: 4%;
+    
+}
+
+.score-user{
+    border:5px solid transparent;
+    border-image:linear-gradient(to bottom,black 0%, rgb(247, 243, 243) 100%)1;
+    height: 6em;
+    width: 14%;
+    display: flex;
+    position: relative;
+    transform: translateY(300%);
+    margin-left: 82%;
+    margin-right: 4%;
+}
+
+.label{
+    border:2px solid transparent;
+    height: 30%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top:0.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+.points{
+    font-size: 225%;
+    font-weight: bolder;
+    margin-left: 46%;
+    margin-right: 53%;
+    margin-top: 1em;
+    color:white;
+}
+
+.user-card{
+    border:5px solid transparent;
+    border-radius: 15%;
+    height: 80px;
+    width: 4%;
+    display: flex;
+    position:absolute;
+    background: linear-gradient(90deg, rgb(238, 232, 232),rgb(79, 138, 153),rgb(7, 201, 250)); 
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;  
+}
+
+.pc-card{
+    border:5px solid transparent;
+    border-radius: 15%;
+    height: 80px;
+    width: 4%;
+    display: flex;
+    position: absolute;
+    background: linear-gradient(90deg, white,gray,black); 
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.turn-pc{
+    border:2px solid transparent;
+    background-color: rgb(57,255,20);
+    height: 8%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-425%);
+    margin-left: 28%;
+    font-size:270%;
+}
+.turn-user{
+        border:2px solid transparent;
+        background-color: rgb(57,255,20);
+        height: 8%;
+        width:30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translateY(450%);
+        margin-left: 28%;
+        font-size:270%;
+}
+
+.first-user-card{
+    transform: translateY(170%);
+    margin-left: 8%;
+}
+
+.second-user-card{
+    transform: translateY(170%);
+    margin-left: 14%;
+}
+
+.third-user-card{
+    transform: translateY(170%);
+    margin-left:20%;
+}
+
+.fourth-user-card{
+    transform: translateY(170%);
+    margin-left: 26%;
+}
+
+.fifth-user-card{
+    transform: translateY(170%);
+    margin-left: 32%;
+}
+
+.sixth-user-card{
+    transform: translateY(170%);
+    margin-left: 38%;
+}
+
+.seventh-user-card{
+    transform: translateY(170%);
+    margin-left: 44%;
+}
+
+.eighth-user-card{
+    transform: translateY(170%);
+    margin-left: 50%;
+}
+
+.ninth-user-card{
+    transform: translateY(170%);
+    margin-left: 56%;
+}
+
+.tenth-user-card{
+    transform: translateY(170%);
+    margin-left: 62%;
+}
+
+.eleventh-user-card{
+    transform: translateY(170%);
+    margin-left: 68%;
+}
+
+.twelfth-user-card{
+    transform: translateY(170%);
+    margin-left: 74%;
+}
+
+.first-pc-card{
+    transform: translateY(-200%);
+    margin-left: 8%;
+}
+
+.second-pc-card{
+    transform: translateY(-200%);
+    margin-left: 14%;
+}
+
+.third-pc-card{
+    transform: translateY(-200%);
+    margin-left:20%;
+}
+
+.fourth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 26%;
+}
+
+.fifth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 32%;
+}
+
+.sixth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 38%;
+}
+
+.seventh-pc-card{
+    transform: translateY(-200%);
+    margin-left: 44%;
+}
+
+.eighth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 50%;
+}
+
+.ninth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 56%;
+}
+
+.tenth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 62%;
+}
+
+.eleventh-pc-card{
+    transform: translateY(-200%);
+    margin-left: 68%;
+}
+
+.twelfth-pc-card{
+    transform: translateY(-200%);
+    margin-left: 74%;
+}
+
+.picture-dice-dots{
+    background-image: url(../IMAGES/dices2.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border:5px solid transparent;
+    border-radius: 50%;
+    height: 200px;
+    width: 15%;
+    display: flex;
+    position: absolute;
+    transform: translateY(-36%);
+    margin-left: 42.5%;
+    font-size:270%;
+}
+
+.button-style{
+    background-color: white;
+    border:5px solid transparent;
+    border-radius: 50%;
+    height: 7%;
+    width: 3.5%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.options{
+    background-image: url(../IMAGES/home.PNG);
+    transform: translateY(-410%);
+    margin-left:.3%;
+}
+.rules{
+    background-image: url(../IMAGES/rules.PNG);
+    transform: translateY(-290%);
+    margin-left: .3%;
+}
+
+.autor{
+    font-style: italic;
+    color: white;
+    font-size: 120%;
+    transform: translateY(1000%);
+    margin-left: 5%;
+}
