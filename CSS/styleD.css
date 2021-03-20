@@ -80,6 +80,32 @@ header{
     font-size: 30px;
     font-weight: bolder;  
 }
+.user-card:hover{
+    animation-name: moves;
+    animation-iteration-count:initial;
+    animation-duration: 15s;
+    cursor: pointer;
+}
+
+.pc-card:hover{
+    animation-name: moves-crds;
+    animation-iteration-count:initial;
+    animation-duration:3s;
+    cursor: pointer;
+}
+
+.picture-dice-dots:hover{
+    animation-name:animation;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+    animation-play-state: unset;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+.stat-button:hover{
+    cursor: pointer;
+}
 
 .pc-card{
     border:5px solid transparent;
@@ -101,25 +127,44 @@ header{
     height: 8%;
     width:30%;
     display: flex;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     position: absolute;
     transform: translateY(-425%);
     margin-left: 28%;
-    font-size:270%;
+    font-size:200%;
 }
 .turn-user{
-        border:2px solid transparent;
-        background-color: rgb(57,255,20);
-        height: 8%;
-        width:30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        transform: translateY(450%);
-        margin-left: 28%;
-        font-size:270%;
+    border:2px solid transparent;
+    background-color: rgb(57,255,20);
+    height: 8%;
+    width:30%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(450%);
+    margin-left: 28%;
+    font-size:200%;
+    
+}
+
+.stat-button{
+    border:2px solid transparent;
+    border-radius: 45%;
+    height: 8%;
+    width:12%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;  
+    font-size: 150%;
+    align-items: center;
+    position: absolute;
+    transform: translateY(180%);
+    margin-left: 83%;
+    background: linear-gradient(45deg, rgb(24, 245, 4),#4cec0d,rgb(207, 255, 34));
 }
 
 .first-user-card{
@@ -254,7 +299,7 @@ header{
     width: 15%;
     display: flex;
     position: absolute;
-    transform: translateY(-36%);
+    top: 5.5em;
     margin-left: 42.5%;
     font-size:270%;
 }
@@ -293,4 +338,99 @@ header{
     font-size: 120%;
     transform: translateY(1000%);
     margin-left: 5%;
+}
+
+@keyframes moves{
+    from {
+      }
+    
+      to {
+        transform:scaleY(.7);
+      }
+}
+
+@keyframes moves-crds{
+    from{      
+
+    }
+    to{
+        transform:rotate(20deg);
+    }
+}
+
+@keyframes animation{
+    from{
+        transform:rotateX(0deg);
+    }
+    to{
+        transform:rotateX(360deg);
+    }
+}
+
+.picture{
+    border-radius: 50%;
+    background: black;
+    width: 5%;
+    height: 5%;
+    position: relative;
+}
+
+.one-dot{
+    transform: translateY(500%);
+    margin-left: 11%;
+}
+
+.two-dots{
+    transform: translateY(500%);
+    margin-left: 17%;
+}
+
+.three-dots{
+    transform: translateY(780%);
+    margin-left:-27%;
+}
+
+.four-dots{
+    transform: translateY(780%);
+    margin-left:17%;
+}
+
+.five-dots{
+    transform: translateY(1050%);
+    margin-left:-27%; 
+}
+
+.six-dots{
+    transform: translateY(1050%);
+    margin-left:17%;
+}
+
+.one-dot-r{
+    transform:translateY(900%);
+    margin-left:13%;
+}
+
+.two-dots-r{
+    transform:translateY(900%);
+    margin-left:16%;
+}
+
+.three-dots-r{
+    transform:translateY(1150%);
+    margin-left:-26%;
+}
+
+.four-dots-r{
+    transform:translateY(1150%);
+    margin-left:16%;
+}
+
+.five-dots-r{
+    transform:translateY(1400%);
+    margin-left:-26%;
+}
+
+.six-dots-r{
+    transform:translateY(1400%);
+    margin-left:16%;
 }
