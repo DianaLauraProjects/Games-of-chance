@@ -384,4 +384,4 @@ const pcChoice=()=>{
     const automaticChoice=[rightDieRandom,leftDieRandom,sum(rightDieRandom,leftDieRandom),subtraction(rightDieRandom,leftDieRandom),multiplication(rightDieRandom,leftDieRandom)]
 }
 
-console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue))
+console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
