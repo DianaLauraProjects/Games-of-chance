@@ -26,23 +26,30 @@ const rightSixDots=document.getElementById('rightSixDots');
 
 const diceTotal=document.getElementById('diceTotal');
 
+const start=document.getElementById('start');
+
 const turnPc=document.getElementById('turnPc');
 const turnUser=document.getElementById('turnUser');
+
+/******************** */
+start.addEventListener('click',()=>{
 
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
-  }
+}
 
 let rightDieRandom=getRandomInt(1,7);
 let leftDieRandom=getRandomInt(1,7);
 let pcValue=getRandomInt(1,13);
 let pcTypeGame=getRandomInt(1,3);
 let whoStart=getRandomInt(1,3);
+let userValue;
 
 // Functions show dots in the right die
 const oneDotRF=()=>{
   rightOneDot.style.opacity="1";
+
 }
 
 const twoDotsRF=()=>{
@@ -272,61 +279,103 @@ diceTotal.addEventListener('click',()=>{
   rightDieRandom=getRandomInt(1,7);
   showRightDots(rightDieRandom);
   showLeftDots(leftDieRandom);
+  
 })
 
-console.log(rightDieRandom);
-console.log(leftDieRandom);
-console.log(pcValue);
-
-let userValue;
 userOn.addEventListener('click',()=>{
   userValue=1;
-  console.log(userValue);
-  console.log('si funciona')
-})
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userOn.style.background="green"
+  }
+  })
 
 userSe.addEventListener('click',()=>{
     userValue=2;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userSe.style.background="green"
+  }
   })
 
 userTh.addEventListener('click',()=>{
     userValue=3;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userTh.style.background="green"
+  }
   })
 
 userFo.addEventListener('click',()=>{
     userValue=4;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userFo.style.background="green"
+  }
   })
 
 userFi.addEventListener('click',()=>{
     userValue=5;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userFi.style.background="green"
+  }
   })
 
 userSi.addEventListener('click',()=>{
     userValue=6;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userSi.style.background="green"
+  }
   })
 
 userSev.addEventListener('click',()=>{
     userValue=7;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userSev.style.background="green"
+  }
   })
 
 userEi.addEventListener('click',()=>{
     userValue=8;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userEi.style.background="green"
+  }
   })
 
 userNi.addEventListener('click',()=>{
     userValue=9;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userNi.style.background="green"
+  }
   })
 
 userTe.addEventListener('click',()=>{
     userValue=10;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userTe.style.background="green"
+  }
   })
 
 userEl.addEventListener('click',()=>{
     userValue=11;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userEl.style.background="green"
+  }
   })
 
 userTw.addEventListener('click',()=>{
     userValue=12;
+  if (chosenNumber(rightDieRandom,leftDieRandom,userValue)==userValue) {
+    console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+    userTw.style.background="green"
+  }
   })
 
 function sum(rightDieRandom,leftDieRandom){
@@ -372,16 +421,22 @@ function chosenNumber(rightDieRandom,leftDieRandom,userValue){
     }
 }
 
+const turnTaking=()=>{
 if (whoStart==1) {
   turnPc.style.opacity='0';
   turnUser.style.opacity='1';
 } else {
   turnPc.style.opacity='1';
   turnUser.style.opacity='0';
-}
+}}
 
 const pcChoice=()=>{
     const automaticChoice=[rightDieRandom,leftDieRandom,sum(rightDieRandom,leftDieRandom),subtraction(rightDieRandom,leftDieRandom),multiplication(rightDieRandom,leftDieRandom)]
 }
 
-console.log(chosenNumber(rightDieRandom,leftDieRandom,userValue));
+console.log(pcValue + "this is pc v");
+console.log(chosenNumber(rightDieRandom,leftDieRandom,pcValue) + "this is ");
+console.log(rightDieRandom +"der");
+console.log(leftDieRandom+"izquie");
+
+})

@@ -94,17 +94,28 @@ header{
     cursor: pointer;
 }
 
-.picture-dice-dots:hover{
+.picture-dice-dots:active{
     animation-name:animation;
     animation-iteration-count: 1;
     animation-direction: initial;
     animation-play-state: unset;
-    animation-duration: 2s;
+    animation-duration: .6s; 
+}
+
+.picture-dice-dots:hover{
     cursor: pointer;
 }
 
 .stat-button:hover{
     cursor: pointer;
+}
+
+.stat-button:active{
+    animation-name:strt;
+    animation-iteration-count: 1;
+    animation-direction: initial;
+    animation-play-state: unset;
+    animation-duration: .2s; 
 }
 
 .pc-card{
@@ -364,6 +375,16 @@ header{
     }
     to{
         transform:rotateX(360deg);
+        background-image: url(../IMAGES/white-background.PNG);
+    }
+}
+
+@keyframes strt{
+    from{
+        
+    }
+    to{
+        background-image: url(../IMAGES/white-background.PNG);
     }
 }
 
