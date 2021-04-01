@@ -90,16 +90,7 @@ header{
 .pc-card:hover{
     animation-name: moves-crds;
     animation-iteration-count:initial;
-    animation-duration:3s;
-    cursor: pointer;
-}
-
-.picture-dice-dots:active{
-    animation-name:animation;
-    animation-iteration-count: 1;
-    animation-direction: initial;
-    animation-play-state: unset;
-    animation-duration: .6s; 
+    animation-duration:10s;
 }
 
 .picture-dice-dots:hover{
@@ -108,6 +99,12 @@ header{
 
 .stat-button:hover{
     cursor: pointer;
+}
+
+.stat-button{
+    animation-name: flsh;
+    animation-iteration-count:3;
+    animation-duration:.6s;
 }
 
 .stat-button:active{
@@ -134,7 +131,6 @@ header{
 
 .turn-pc{
     border:2px solid transparent;
-    background-color: rgb(57,255,20);
     height: 8%;
     width:30%;
     display: flex;
@@ -145,10 +141,11 @@ header{
     transform: translateY(-425%);
     margin-left: 28%;
     font-size:200%;
+    color: chartreuse;
+    font-weight: bolder;
 }
 .turn-user{
     border:2px solid transparent;
-    background-color: rgb(57,255,20);
     height: 8%;
     width:30%;
     display: flex;
@@ -159,7 +156,8 @@ header{
     transform: translateY(450%);
     margin-left: 28%;
     font-size:200%;
-    
+    color: chartreuse;
+    font-weight: bolder;
 }
 
 .stat-button{
@@ -369,7 +367,7 @@ header{
     }
 }
 
-@keyframes animation{
+@keyframes animation1{
     from{
         transform:rotateX(0deg);
     }
@@ -388,6 +386,15 @@ header{
     }
 }
 
+@keyframes flsh{
+    from {
+    opacity: 1;
+    }
+    to {
+    opacity: 0;
+    }
+   }
+
 .picture{
     border-radius: 50%;
     background: black;
@@ -397,61 +404,73 @@ header{
 }
 
 .one-dot{
+    opacity:0;
     transform: translateY(500%);
     margin-left: 11%;
 }
 
 .two-dots{
+    opacity:0;
     transform: translateY(500%);
     margin-left: 17%;
 }
 
 .three-dots{
+    opacity:0;
     transform: translateY(780%);
     margin-left:-27%;
 }
 
 .four-dots{
+    opacity:0;
     transform: translateY(780%);
     margin-left:17%;
 }
 
 .five-dots{
+    opacity:0;
     transform: translateY(1050%);
     margin-left:-27%; 
 }
 
 .six-dots{
+    opacity:0;
     transform: translateY(1050%);
     margin-left:17%;
 }
 
 .one-dot-r{
+    opacity:0;
     transform:translateY(900%);
     margin-left:13%;
 }
 
 .two-dots-r{
+    opacity:0;
     transform:translateY(900%);
     margin-left:16%;
 }
 
 .three-dots-r{
+    opacity:0;
     transform:translateY(1150%);
     margin-left:-26%;
 }
 
 .four-dots-r{
+    opacity:0;
     transform:translateY(1150%);
     margin-left:16%;
 }
 
 .five-dots-r{
+    opacity:0;
     transform:translateY(1400%);
     margin-left:-26%;
 }
 
 .six-dots-r{
+    opacity:0;
     transform:translateY(1400%);
     margin-left:16%;
     
